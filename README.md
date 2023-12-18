@@ -13,7 +13,7 @@ Welcome to the Django API project! This repository contains the source code for 
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Configurations](#configurations)
-  - [.env file](#.env-file)
+  - [.env file](#env-file)
 - [Contributing](#contributing)
 
   ## About
