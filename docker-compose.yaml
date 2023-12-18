@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  DjangoAPI:
+    volumes:
+      - static:/static
+      - media:/media
+    env_file:
+      - ./DjangoAPI/.env
+    build:
+      context: ./DjangoAPI
+    ports:
+      - "8000:8000"
+  react_ui:
+    build:
+      context: ./react_ui
+    volumes:
+      - react_ui:/app/build
+
+  # When you have nginx service
+
+#  nginx:
+#    image: nginx:latest
+#    ports:
+#      - "80:80"
+#    volumes:
+#      - ./nginx/conf.d:/etc/nginx/conf.d
+#    depends_on:
+#      - DjangoAPI
+#      - react_ui
+
+volumes:
+  static:
+  media:
+  react_ui:
