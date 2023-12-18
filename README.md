@@ -98,9 +98,9 @@ cd DjangoAPI_with_react
     python manage.py migrate
     ```
   - ### Step 2.6: Run Django Server
-        ```bash
-        python manage.py runserver
-        ```
+    ```bash
+    python manage.py runserver
+    ```
 ### Step 3: Configure Frontend
 
 - ### Step 3.1: Open new Terminal and chage the directory to react_ui
